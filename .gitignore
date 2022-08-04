@@ -1,0 +1,14 @@
+# log files
+.idea
+.ipynb_checkpoints
+*/__pycache__
+*/*/__pycache__
+
+# tmp files --> these will be generated once the code is run
+tmp
+
+# drafts
+vscode
+
+# files unified in utils.py
+src/utils
