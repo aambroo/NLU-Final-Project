@@ -23,13 +23,13 @@ from src.utils import plot_f1_score_results
 
 
 def main(
-    first_stage_vectorizer_name='count',
-    second_stage_vectorizer_name='tfidf',
-    subj_det='filter',
-    subj_detection_name='count_multinomial',
+    first_stage_vectorizer_name = 'count',
+    second_stage_vectorizer_name = 'tfidf',
+    subj_det = 'filter',
+    subj_detection_name = 'count_multinomial',
     reduce_dim = True,
-    kfold_split_size=5,
-    ):
+    kfold_split_size = 5,
+    save_plots = False):
 
     start_time = time()
 
@@ -50,7 +50,6 @@ def main(
 
     # labels for movie reviews
     y = np.array([0] * len(neg) + [1] * len(pos))
-    # print("Labels shape: ", y.shape)
 
     # rejecting objective sentences using subjectivity detection
     path_to_models = 'tmp/models/'
@@ -122,7 +121,7 @@ def main(
 
     # Save F1 Score Results
     PATH_TO_OUTPUTS = 'tmp/outputs/'
-    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='two_stage_clf')
+    if save_plots: plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='two_stage_clf')
 
     two_stage_clf_average = sum( scores['test_f1_micro']) / len(scores['test_f1_micro'] )
     print("Two Stage Classifier F1 Score: {:.3f}".format(
@@ -142,7 +141,7 @@ def main(
                             return_estimator=True)
 
     # Save F1 Score Results
-    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='naive_bayes_clf')
+    if save_plots: plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='naive_bayes_clf')
 
     naive_bayes_average = sum( scores['test_f1_micro'] ) / len( scores['test_f1_micro'] )
     print("Multinomial Naive Bayes F1 Score: {:.3f}".format(naive_bayes_average))
@@ -181,7 +180,7 @@ def main(
                             n_jobs=-1)
 
     # Save F1 Score Results
-    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='svc_clf')
+    if save_plots : plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='svc_clf')
 
     svc_average = sum(scores['test_f1_micro']) / len(scores['test_f1_micro'])
     print("SVC F1 Score: {:.3f}".format(svc_average))
@@ -221,6 +220,7 @@ if __name__ == '__main__':
     subj_det_bets = ["aggregate", "filter"]
     dim_red_bets = [True, False]
 
+    # Fitting Classifiers with all possible param combinations
     summary = []
     for i, first_stage_vec_bet in enumerate(first_stage_vec_bets):
         for second_stage_vec_bet in second_stage_vec_bets[i]:
