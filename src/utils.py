@@ -698,5 +698,9 @@ def plot_f1_score_results(scores, clf_name: str, path_to_save: os.path, show: bo
             os.makedirs(path_to_save)
         plt.title(f'{clf_name} - F1 Score')
         plt.plot(np.sort(scores), scores)
-        if show: plt.show()
-        else: plt.savefig(path_to_save+f'{clf_name}_f1.png')
+        if show: 
+            plt.show()
+            plt.close()
+        else: 
+            plt.savefig(path_to_save+f'{clf_name}_f1.png')
+            plt.close()
