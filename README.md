@@ -21,6 +21,8 @@ First off open the [Preprocessing Notebook](01-preprocessing.ipynb) and run all 
     jupyter nbconvert --to notebook --inplace --execute 01-preprocessing.ipynb
 ```
 
+ℹ️ **Note:** running Preprocessing Notebook first is vital for [Main](02-main.py) file to work.
+
 Then, to run the main code run the following command from repository root:
 ```bash
     python 02-main.py
