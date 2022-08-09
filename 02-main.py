@@ -1,8 +1,10 @@
 # Shared Imports
 from copy import deepcopy
 import os
+from matplotlib.pyplot import plot
 import nltk
 import numpy as np
+import pandas as pd
 from tqdm import tqdm
 # Load Dataset
 from joblib import load
@@ -14,6 +16,8 @@ from src.utils import inference_time
 # Timing
 from time import time
 from src.utils import print_time
+# Plotting
+from src.utils import plot_f1_score_results
 
 
 
@@ -114,6 +118,12 @@ def main(
                             cv=StratifiedKFold(n_splits=kfold_split_size),
                             scoring=['f1_micro'],
                             return_estimator=True)
+    
+
+    # Save F1 Score Results
+    PATH_TO_OUTPUTS = 'tmp/outputs/'
+    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='two_stage_clf')
+
     two_stage_clf_average = sum( scores['test_f1_micro']) / len(scores['test_f1_micro'] )
     print("Two Stage Classifier F1 Score: {:.3f}".format(
         two_stage_clf_average))
@@ -130,6 +140,10 @@ def main(
                             scoring=['f1_micro'],
                             n_jobs=-1,
                             return_estimator=True)
+
+    # Save F1 Score Results
+    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='naive_bayes_clf')
+
     naive_bayes_average = sum( scores['test_f1_micro'] ) / len( scores['test_f1_micro'] )
     print("Multinomial Naive Bayes F1 Score: {:.3f}".format(naive_bayes_average))
     
@@ -165,6 +179,10 @@ def main(
                             scoring=['f1_micro'],
                             return_estimator=True,
                             n_jobs=-1)
+
+    # Save F1 Score Results
+    #plot_f1_score_results(scores=scores['test_f1_micro'], path_to_save=PATH_TO_OUTPUTS, clf_name='svc_clf')
+
     svc_average = sum(scores['test_f1_micro']) / len(scores['test_f1_micro'])
     print("SVC F1 Score: {:.3f}".format(svc_average))
 
@@ -217,7 +235,7 @@ if __name__ == '__main__':
                     data = main(**params)
                     summary.append(data)
     print(summary)
-    
+
     # save experiment results
     path_to_summary = 'tmp/summary/'
     summary_save_path = os.path.join(path_to_summary, 'summary.csv')
@@ -225,5 +243,7 @@ if __name__ == '__main__':
         os.makedirs(path_to_summary)
     print(f'Saving summary at: {summary_save_path}')
 
-    cols = ["vec1", "vec2", "subjDet", "dimRed", "2Stage F1", "Multinomial F1",
-               "SVC F1", "2Stage InfTime", "Multinomial Inftime", "SVC Inftime"]
+    cols = ["Vec 1", "Vec 2", "Subj Det", "Reduce Dim", "Two Stage F1", "Multinomial F1",
+               "SVC F1", "Two Stage Elaps", "Multinomial Elaps", "SVC Elaps"]
+
+    pd.DataFrame(summary, columns=cols).to_csv(summary_save_path, index=False)
