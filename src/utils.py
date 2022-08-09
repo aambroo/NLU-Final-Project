@@ -5,7 +5,7 @@
 ##   Functions mainly cover tasks beneficial to dataset preprocessing    ##
 ##    which will be required for later purposes.                         ##
 ###########################################################################
-##              Author: Matteo Ambrosini - mat. #232885                  ##
+##              Editor: Matteo Ambrosini - mat. #232885                  ##
 ###########################################################################
 
 
@@ -618,6 +618,7 @@ from nltk.tokenize import word_tokenize
 import os
 from joblib import dump
 from scipy.sparse import csr_matrix
+import matplotlib.pyplot as plt
 
 
 def switch_vectorizer(vectorizer_name="count"):     #---> utils.miscellaneous
@@ -691,3 +692,11 @@ def print_time(start_time: time, end_time:time = None, message:str = 'Done in', 
         if out_log: return f'{message} {mins} minutes, {secs} seconds' if secs == 1 else f'{message} {mins} minutes, {secs} seconds'
         else: print(f'{message} {mins} minutes, {secs} seconds' if secs == 1 else f'{message} {mins} minutes, {secs} seconds')
 
+
+def plot_f1_score_results(scores, clf_name: str, path_to_save: os.path, show: bool = False) -> None:
+        if not os.path.isdir(path_to_save):
+            os.makedirs(path_to_save)
+        plt.title(f'{clf_name} - F1 Score')
+        plt.plot(np.sort(scores), scores)
+        if show: plt.show()
+        else: plt.savefig(path_to_save+f'{clf_name}_f1.png')
