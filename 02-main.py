@@ -20,10 +20,12 @@ from src.utils import print_time
 from src.utils import plot_f1_score_results
 
 
+# Setup nltk Packages
+#nltk.download(['movie_reviews', 'sentiwordnet', 'punkt', 'averaged_perceptron_tagger'])
 
 
 def main(
-    first_stage_vectorizer_name = 'count',
+    first_stage_vectorizer_name = 'bow',
     second_stage_vectorizer_name = 'tfidf',
     subj_det = 'filter',
     subj_detection_name = 'count_multinomial',
@@ -36,13 +38,13 @@ def main(
     # checks
     assert subj_det in ('filter', 'aggregate'), 'subj_det should be either `filter` or `aggregate`'
     assert len(subj_detection_name.split('_')) == 2
-    assert subj_detection_name.split('_')[0] in ('count', 'tfidf')
+    assert subj_detection_name.split('_')[0] in ('bow', 'tfidf')
     assert subj_detection_name.split('_')[1] in ('multinomial', 'bernoulli')
 
 
     # download possible missing nltk package: `perceptron_tagger`
-    nltk.download('averaged_perceptron_tagger')
-
+    # nltk.download('averaged_perceptron_tagger')
+    print(f'\nPARAMS:\n1-Stage Vec: {first_stage_vectorizer_name}, 2-Stage Vec: {second_stage_vectorizer_name}\nSubj Det: {subj_det}, Dim Red: {reduce_dim}')
     # download dataset
     # movie reviews
     pos, neg = get_movie_reviews_dataset(mark_negs=False)
@@ -76,7 +78,7 @@ def main(
             movie_reviews_ds[i] = list(compress(doc, y_hat))
             removed += len(doc) - len(movie_reviews_ds[i])
             total += len(doc)
-        print(f'Removed {removed}/{total} using subjectivity detection filtering.')
+        print(f"Removed {removed}/{total} using subjectivity detection filtering.")
         filter_elapsed = time() - filter_start
         filter_mins = int(filter_elapsed // 60)
         filter_secs = int(filter_elapsed %  60)
@@ -85,28 +87,28 @@ def main(
     # representing document for FIRST STAGE vectorizer
     first_stage_vectorizer = switch_vectorizer(first_stage_vectorizer_name)
     first_stage_vectorizer_path = os.path.join(
-        path_to_models, "first_stage_vectorizer.joblib")
+        path_to_models, 'first_stage_vectorizer.joblib')
     first_stage_vectorizer, X = fit_transform_save(
         first_stage_vectorizer, movie_reviews_ds, first_stage_vectorizer_path)
 
     # representing document for SECOND STAGE vectorizer
     second_stage_vectorizer = switch_vectorizer(second_stage_vectorizer_name)
     second_stage_vectorizer_path = os.path.join(
-        path_to_models, "second_stage_vectorizer.joblib")
+        path_to_models, 'second_stage_vectorizer.joblib')
     second_stage_vectorizer, X_second_stage = fit_transform_save(
         second_stage_vectorizer, movie_reviews_ds, second_stage_vectorizer_path)
 
     # instantiate 2-stage classifier w/ pretrained first-second stage vectorizers
     two_stage_clf_params = {
-        "first_stage_vectorizer_path": first_stage_vectorizer_path,
-        "second_stage_vectorizer_path": second_stage_vectorizer_path,
-        "reduce_dim": reduce_dim
+        'first_stage_vectorizer_path': first_stage_vectorizer_path,
+        'second_stage_vectorizer_path': second_stage_vectorizer_path,
+        'reduce_dim': reduce_dim
         }
     
-    if subj_det == "aggregate":
-        two_stage_clf_params["use_subjectivity"] = True
-        two_stage_clf_params["subj_vectorizer_path"] = subj_vectorizer_path
-        two_stage_clf_params["subj_detector_path"] = subj_detector_path
+    if subj_det == 'aggregate':
+        two_stage_clf_params['use_subjectivity'] = True
+        two_stage_clf_params['subj_vectorizer_path'] = subj_vectorizer_path
+        two_stage_clf_params['subj_detector_path'] = subj_detector_path
 
     
     ########## TWO-STAGE-CLASSIFIER ##########
@@ -128,7 +130,7 @@ def main(
         two_stage_clf_average))
 
     # Inference Time
-    best_2_stage = scores["estimator"][np.argmax( np.array(scores["test_f1_micro"]) )]
+    best_2_stage = scores['estimator'][np.argmax( np.array(scores['test_f1_micro']) )]
     two_stage_clf_elapsed = inference_time(movie_reviews_ds, best_2_stage)
 
     
@@ -147,9 +149,9 @@ def main(
     print("Multinomial Naive Bayes F1 Score: {:.3f}".format(naive_bayes_average))
     
     # Inference Time
-    naive_bayes_best = scores["estimator"][np.argmax(np.array(scores["test_f1_micro"]))]
+    naive_bayes_best = scores['estimator'][np.argmax(np.array(scores['test_f1_micro']))]
     naive_bayes_elapsed = inference_time( movie_reviews_ds, naive_bayes_best, first_stage_vectorizer )
-    if subj_det == "filter":
+    if subj_det == 'filter':
         naive_bayes_mins = int(naive_bayes_elapsed.split(":")[
                                   0][:-1]) + filter_mins
         naive_bayes_secs = int(naive_bayes_elapsed.split(":")[
@@ -162,7 +164,7 @@ def main(
     if reduce_dim:
         X_second_stage = best_2_stage.dim_reducer.transform(X_second_stage)
 
-    if subj_det == "aggregate":
+    if subj_det == 'aggregate':
         subj_features = []
         for i, doc in enumerate(deepcopy(movie_reviews_ds)):
             sents = [" ".join(sent) for sent in doc]
@@ -186,11 +188,11 @@ def main(
     print("SVC F1 Score: {:.3f}".format(svc_average))
 
     # Inference Time
-    svc_best = scores["estimator"][np.argmax(np.array(scores["test_f1_micro"]))]
+    svc_best = scores['estimator'][np.argmax(np.array(scores['test_f1_micro']))]
     svc_elapsed = inference_time(movie_reviews_ds, svc_best, second_stage_vectorizer,
                                    dim_reducer=best_2_stage.dim_reducer if reduce_dim else None,
-                                   subj_detector=best_2_stage.subj_detector if subj_det == "aggregate" else None,
-                                   subj_vectorizer=best_2_stage.subj_vectorizer if subj_det == "aggregate" else None)
+                                   subj_detector=best_2_stage.subj_detector if subj_det == 'aggregate' else None,
+                                   subj_vectorizer=best_2_stage.subj_vectorizer if subj_det == 'aggregate' else None)
 
     # total execution time
     print_time(start_time=start_time, message='Done in')
@@ -215,9 +217,9 @@ def main(
 if __name__ == '__main__':
     
     # experiment with different architectures
-    first_stage_vec_bets = ["diffposneg", "count"]
-    second_stage_vec_bets = [["count", "tfidf"], ["tfidf"]]
-    subj_det_bets = ["aggregate", "filter"]
+    first_stage_vec_bets = ['diffposneg', 'bow']
+    second_stage_vec_bets = [['bow', 'tfidf'], ['tfidf']]
+    subj_det_bets = ['aggregate', 'filter']
     dim_red_bets = [True, False]
 
     # Fitting Classifiers with all possible param combinations
@@ -227,10 +229,10 @@ if __name__ == '__main__':
             for subj_det_bet in subj_det_bets:
                 for dim_red_bet in dim_red_bets:
                     params = {
-                        "first_stage_vectorizer_name": first_stage_vec_bet,
-                        "second_stage_vectorizer_name": second_stage_vec_bet,
-                        "subj_det": subj_det_bet,
-                        "reduce_dim": dim_red_bet
+                        'first_stage_vectorizer_name': first_stage_vec_bet,
+                        'second_stage_vectorizer_name': second_stage_vec_bet,
+                        'subj_det': subj_det_bet,
+                        'reduce_dim': dim_red_bet
                     }
                     data = main(**params)
                     summary.append(data)
@@ -243,7 +245,7 @@ if __name__ == '__main__':
         os.makedirs(path_to_summary)
     print(f'Saving summary at: {summary_save_path}')
 
-    cols = ["Vec 1", "Vec 2", "Subj Det", "Reduce Dim", "Two Stage F1", "Multinomial F1",
-               "SVC F1", "Two Stage Elaps", "Multinomial Elaps", "SVC Elaps"]
+    cols = ['Vec 1', 'Vec 2', 'Subj Det', 'Reduce Dim', 'Two Stage F1', 'NB F1',
+               'SVC F1', 'Two Stage Elaps', 'NB Elaps', 'SVC Elaps']
 
     pd.DataFrame(summary, columns=cols).to_csv(summary_save_path, index=False)
