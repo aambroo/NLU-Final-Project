@@ -1,7 +1,7 @@
 ###########################################################################
 ############################## PREPROCESSING ##############################
 ###########################################################################
-##   Bag of functions to support basic tasks required multiple times.    ##
+##   Bag of functions to support tasks that have to do with preprocessing##
 ##   Functions mainly cover tasks beneficial to dataset preprocessing    ##
 ##    which will be required for later purposes.                         ##
 ###########################################################################
@@ -9,6 +9,7 @@
 ###########################################################################
 
 
+from tkinter import N
 import joblib
 import nltk
 import numpy as np
@@ -30,7 +31,7 @@ def get_movie_reviews_dataset(mark_negs:bool = True) -> str:    #---> utils.prep
     '''Uses the nltk library to download the 'Movie Reviews' dateset,
     splitting it into negative reviews and positive reviews.
     Toggle :param mark_neg: if u wish sentences to be mark-negated or not.'''
-    nltk.download("movie_reviews")
+    #nltk.download("movie_reviews")
     from nltk.corpus import movie_reviews
     pos = movie_reviews.paras(categories="pos")
     neg = movie_reviews.paras(categories="neg")
@@ -38,7 +39,6 @@ def get_movie_reviews_dataset(mark_negs:bool = True) -> str:    #---> utils.prep
         pos = [[mark_negation(sent) for sent in doc] for doc in pos]
         neg = [[mark_negation(sent) for sent in doc] for doc in neg]
     return pos, neg
-
 
 
 def hconcat(X1: np.ndarray, X2: np.ndarray) -> np.ndarray:      #---> utils.preprocessing
@@ -54,13 +54,27 @@ def hconcat(X1: np.ndarray, X2: np.ndarray) -> np.ndarray:      #---> utils.prep
     return X
 
 
+def vconcat(X1: np.ndarray, X2: np.ndarray) -> np.ndarray:
+    """Applies vertical concatenation to the X1 and X2 matrices, returning the concatenated matrix."""
+    assert len(X1.shape) == len(
+        X2.shape) == 2, "function 'vconcat' only works with matrices (np.array with 2 dimensions)."
+    assert X1.shape[1] == X2.shape[1], "In order to vconcat matrices, they must have the same number of columns."
+    N = X1.shape[0] + X2.shape[0]  # sum of
+    M = X1.shape[1]
+    X = np.ndarray(shape=(N, M))
+    X[:X1.shape[0], :] = X1
+    X[X1.shape[0]:, :] = X2
+    return X
+
+
+
 
 #################################################################################
 ################################### LOGGER ######################################
 #################################################################################
-####                  Defining Custom-Colored logger.                          ##
+####                  Defining Custom-Colored logger.                        ####
 #################################################################################
-####              Author: Matteo Ambrosini - mat. #232885                      ##
+####              Author: Matteo Ambrosini - mat. #232885                    ####
 #################################################################################
 
 import logging
@@ -103,12 +117,11 @@ def get_neat_logger(logger_name="neat_logger"):
 #################################################################################
 ################################# DIFFPOSNEG ####################################
 #################################################################################
-####   Bag of functions to support basic tasks required multiple times.        ##
-####   Functions mainly cover tasks beneficial to dataset preprocessing        ##
-####        which will be required for later purposes.                         ##
+####   Implementation of the DiffPosNeg feature as proposed in the orignal   ####
+####    paper (link below or in the REPORT).                                 ####
 #################################################################################
 ## Author: Nguyen et al - original paper:https://aclanthology.org/I13-1114.pdf ##
-####              Editor: Matteo Ambrosini - mat. #232885                      ##
+####              Editor: Matteo Ambrosini - mat. #232885                    ####
 #################################################################################
 
 from time import time
@@ -606,8 +619,8 @@ class TwoStageClassifier(BaseEstimator, ClassifierMixin):
 ############################## MISCELLANEOUS ##############################
 ###########################################################################
 ##   Bag of functions to support basic tasks required multiple times.    ##
-##   Functions mainly cover tasks beneficial to dataset preprocessing    ##
-##    which will be required for later purposes.                         ##
+##   Functions contained in this section are those used for several      ##
+##    purposes.                                                          ##
 ###########################################################################
 ##              Author: Matteo Ambrosini - mat. #232885                  ##
 ###########################################################################
@@ -621,13 +634,13 @@ from scipy.sparse import csr_matrix
 import matplotlib.pyplot as plt
 
 
-def switch_vectorizer(vectorizer_name="count"):     #---> utils.miscellaneous
-    assert vectorizer_name in ("count", "tfidf", "diffposneg", "bert")
-    if vectorizer_name == "count":
+def switch_vectorizer(vectorizer_name='bow'):     #---> utils.miscellaneous
+    assert vectorizer_name in ('bow', 'tfidf', 'diffposneg', 'bert')
+    if vectorizer_name == 'bow':
         return CountVectorizer(tokenizer=word_tokenize)
-    elif vectorizer_name == "tfidf":
+    elif vectorizer_name == 'tfidf':
         return TfidfVectorizer(tokenizer=word_tokenize)
-    elif vectorizer_name == "diffposneg":
+    elif vectorizer_name == 'diffposneg':
         return DiffPosNegVectorizer()
 
 
