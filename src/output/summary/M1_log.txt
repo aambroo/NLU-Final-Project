@@ -1,0 +1,505 @@
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: count
+Subj Det: aggregate, Dim Red: True
+2022-08-10 09:12:17,153 - DiffPosNeg - INFO - Number of positive documents: 1648 (utils.py:289)
+2022-08-10 09:12:17,154 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 46 seconds (utils.py:303)
+2022-08-10 09:12:28,399 - DiffPosNeg - INFO - Transformed 1600 documents in 6 seconds (utils.py:270)
+2022-08-10 09:12:28,399 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:12:32,188 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:12:53,728 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:12:53,729 - Two Stage Classifier - INFO - Done fitting in 31 seconds (utils.py:453)
+2022-08-10 09:12:56,788 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:12:58,681 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:13:04,772 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:13:04,773 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:13:08,340 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:13:29,061 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:13:29,063 - Two Stage Classifier - INFO - Done fitting in 30 seconds (utils.py:453)
+2022-08-10 09:13:32,104 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:13:33,973 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:13:39,981 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:13:39,982 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:13:43,490 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:14:13,186 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:14:13,202 - Two Stage Classifier - INFO - Done fitting in 39 seconds (utils.py:453)
+2022-08-10 09:14:16,309 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:14:18,314 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:14:24,312 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:14:24,312 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:14:27,816 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:14:47,977 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:14:47,979 - Two Stage Classifier - INFO - Done fitting in 29 seconds (utils.py:453)
+2022-08-10 09:14:51,114 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:14:53,146 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:14:59,105 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:14:59,106 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:15:02,650 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:15:22,810 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:15:22,811 - Two Stage Classifier - INFO - Done fitting in 29 seconds (utils.py:453)
+2022-08-10 09:15:25,882 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:15:27,819 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.520
+2022-08-10 09:15:34,487 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+2022-08-10 09:15:44,048 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.520
+2022-08-10 09:15:51,173 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+SVC F1 Score: 0.905
+Done in 4 minutes, 37 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: count
+Subj Det: aggregate, Dim Red: False
+2022-08-10 09:19:00,238 - DiffPosNeg - INFO - Number of positive documents: 1881 (utils.py:289)
+2022-08-10 09:19:00,238 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 45 seconds (utils.py:303)
+2022-08-10 09:19:11,442 - DiffPosNeg - INFO - Transformed 1600 documents in 6 seconds (utils.py:270)
+2022-08-10 09:19:11,443 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:19:19,148 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:22:31,545 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 26 seconds (utils.py:453)
+2022-08-10 09:22:34,651 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:23:33,324 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:23:39,489 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:23:39,490 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:23:47,378 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:26:45,914 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 12 seconds (utils.py:453)
+2022-08-10 09:26:48,958 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:27:46,651 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:27:52,585 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:27:52,585 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:28:00,111 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:30:58,556 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 11 seconds (utils.py:453)
+2022-08-10 09:31:01,755 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:32:01,304 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:32:07,321 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:32:07,321 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:32:14,891 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:35:13,813 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 12 seconds (utils.py:453)
+2022-08-10 09:35:16,943 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:36:14,946 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:36:20,954 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 09:36:20,955 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:36:28,510 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:39:38,540 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 23 seconds (utils.py:453)
+2022-08-10 09:39:41,622 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 09:40:41,134 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.731
+2022-08-10 09:40:47,841 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+2022-08-10 09:45:42,640 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.539
+2022-08-10 09:45:49,872 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+SVC F1 Score: 0.731
+Done in 36 minutes, 16 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: count
+Subj Det: filter, Dim Red: True
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:04<00:00, 401.25it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 09:52:58,449 - DiffPosNeg - INFO - Number of positive documents: 1765 (utils.py:289)
+2022-08-10 09:52:58,449 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 27 seconds (utils.py:303)
+2022-08-10 09:53:05,745 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:53:05,746 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:53:07,808 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:53:21,660 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:53:21,663 - Two Stage Classifier - INFO - Done fitting in 20 seconds (utils.py:453)
+2022-08-10 09:53:24,304 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:53:24,829 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:53:29,201 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:53:29,201 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:53:31,289 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:53:43,133 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:53:43,147 - Two Stage Classifier - INFO - Done fitting in 18 seconds (utils.py:453)
+2022-08-10 09:53:45,752 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:53:46,277 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:53:50,502 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:53:50,503 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:53:52,535 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:54:04,011 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:54:04,023 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 09:54:06,676 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:54:07,232 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:54:11,461 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:54:11,461 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:54:13,488 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:54:25,994 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:54:25,997 - Two Stage Classifier - INFO - Done fitting in 18 seconds (utils.py:453)
+2022-08-10 09:54:28,679 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:54:29,238 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 09:54:33,493 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:54:33,494 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:54:35,545 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 09:54:47,005 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:54:47,008 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 09:54:49,654 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:54:50,198 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.519
+2022-08-10 09:54:55,086 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+2022-08-10 09:54:57,733 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.531
+2022-08-10 09:55:02,864 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+SVC F1 Score: 0.887
+Done in 2 minutes, 42 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: count
+Subj Det: filter, Dim Red: False
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:05<00:00, 391.75it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 09:55:40,776 - DiffPosNeg - INFO - Number of positive documents: 1849 (utils.py:289)
+2022-08-10 09:55:40,776 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 27 seconds (utils.py:303)
+2022-08-10 09:55:47,984 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 09:55:47,984 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 09:55:50,055 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 09:59:01,429 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 17 seconds (utils.py:453)
+2022-08-10 09:59:04,111 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 09:59:59,948 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:00:04,324 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 10:00:04,324 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:00:06,365 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:02:50,564 - Two Stage Classifier - INFO - Done fitting in 2 minutes, 50 seconds (utils.py:453)
+2022-08-10 10:02:53,170 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 10:03:44,515 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:03:48,732 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 10:03:48,732 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:03:50,744 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:06:46,102 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 1 seconds (utils.py:453)
+2022-08-10 10:06:48,722 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 10:07:43,683 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:07:47,884 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 10:07:47,885 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:07:49,881 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:10:39,346 - Two Stage Classifier - INFO - Done fitting in 2 minutes, 55 seconds (utils.py:453)
+2022-08-10 10:10:41,976 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 10:11:37,315 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:11:41,534 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 10:11:41,535 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:11:43,543 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:14:38,300 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 0 seconds (utils.py:453)
+2022-08-10 10:14:40,937 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 10:15:38,556 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.750
+2022-08-10 10:15:43,225 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+2022-08-10 10:20:42,174 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.535
+2022-08-10 10:20:47,311 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+SVC F1 Score: 0.750
+Done in 34 minutes, 58 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: tfidf
+Subj Det: aggregate, Dim Red: True
+2022-08-10 10:30:51,695 - DiffPosNeg - INFO - Number of positive documents: 1714 (utils.py:289)
+2022-08-10 10:30:51,696 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 45 seconds (utils.py:303)
+2022-08-10 10:31:02,725 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:31:02,726 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:31:06,259 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 10:31:30,017 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:31:30,018 - Two Stage Classifier - INFO - Done fitting in 33 seconds (utils.py:453)
+2022-08-10 10:31:33,098 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:31:34,962 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+^[[B2022-08-10 10:31:41,113 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:31:41,114 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:31:44,730 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 10:32:06,600 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:32:06,623 - Two Stage Classifier - INFO - Done fitting in 31 seconds (utils.py:453)
+2022-08-10 10:32:09,651 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:32:11,533 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:32:17,442 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:32:17,443 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:32:20,979 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 10:32:41,541 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:32:41,545 - Two Stage Classifier - INFO - Done fitting in 29 seconds (utils.py:453)
+2022-08-10 10:32:44,642 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:32:46,643 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:32:52,589 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:32:52,589 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:32:56,107 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 10:33:17,338 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:33:17,339 - Two Stage Classifier - INFO - Done fitting in 30 seconds (utils.py:453)
+2022-08-10 10:33:20,442 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:33:22,471 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:33:28,399 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:33:28,400 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:33:31,957 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 10:33:52,104 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:33:52,105 - Two Stage Classifier - INFO - Done fitting in 29 seconds (utils.py:453)
+2022-08-10 10:33:55,198 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:33:57,143 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.490
+2022-08-10 10:34:03,796 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+2022-08-10 10:34:13,369 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.519
+2022-08-10 10:34:20,493 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+SVC F1 Score: 0.900
+Done in 4 minutes, 31 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: tfidf
+Subj Det: aggregate, Dim Red: False
+2022-08-10 10:35:23,972 - DiffPosNeg - INFO - Number of positive documents: 1606 (utils.py:289)
+2022-08-10 10:35:23,972 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 46 seconds (utils.py:303)
+2022-08-10 10:35:35,233 - DiffPosNeg - INFO - Transformed 1600 documents in 6 seconds (utils.py:270)
+2022-08-10 10:35:35,233 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:35:42,960 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:39:20,479 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 51 seconds (utils.py:453)
+2022-08-10 10:39:23,516 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:40:29,866 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:40:35,913 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:40:35,914 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:40:43,614 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:44:04,666 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 34 seconds (utils.py:453)
+2022-08-10 10:44:07,699 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:45:15,128 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:45:21,127 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:45:21,128 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:45:28,728 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:49:02,078 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 46 seconds (utils.py:453)
+2022-08-10 10:49:05,188 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:50:10,201 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:50:16,149 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:50:16,149 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:50:23,737 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:53:54,407 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 43 seconds (utils.py:453)
+2022-08-10 10:53:57,521 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:55:02,893 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 10:55:08,843 - DiffPosNeg - INFO - Transformed 1600 documents in 5 seconds (utils.py:270)
+2022-08-10 10:55:08,844 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 10:55:16,518 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 10:58:22,329 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 19 seconds (utils.py:453)
+2022-08-10 10:58:25,417 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 10:59:31,258 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.829
+2022-08-10 10:59:37,873 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+2022-08-10 11:05:21,938 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.487
+2022-08-10 11:05:29,309 - DiffPosNeg - INFO - Transformed 2000 documents in 6 seconds (utils.py:270)
+SVC F1 Score: 0.829
+Done in 38 minutes, 44 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: tfidf
+Subj Det: filter, Dim Red: True
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:05<00:00, 393.58it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 11:13:55,161 - DiffPosNeg - INFO - Number of positive documents: 1841 (utils.py:289)
+2022-08-10 11:13:55,161 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 27 seconds (utils.py:303)
+2022-08-10 11:14:02,363 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:14:02,364 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:14:04,428 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:14:15,448 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:14:15,450 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 11:14:18,096 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:14:18,610 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:14:22,912 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:14:22,913 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:14:24,979 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:14:35,084 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:14:35,086 - Two Stage Classifier - INFO - Done fitting in 16 seconds (utils.py:453)
+2022-08-10 11:14:37,684 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:14:38,205 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:14:42,401 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:14:42,401 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:14:44,436 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:14:54,683 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:14:54,685 - Two Stage Classifier - INFO - Done fitting in 16 seconds (utils.py:453)
+2022-08-10 11:14:57,314 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:14:57,869 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:15:02,079 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:15:02,080 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:15:04,108 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:15:15,781 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:15:15,782 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 11:15:18,429 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:15:18,989 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:15:23,187 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:15:23,188 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:15:25,232 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:15:35,685 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:15:35,687 - Two Stage Classifier - INFO - Done fitting in 16 seconds (utils.py:453)
+2022-08-10 11:15:38,328 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:15:38,870 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.500
+2022-08-10 11:15:43,545 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+2022-08-10 11:15:46,233 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.532
+2022-08-10 11:15:51,415 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+SVC F1 Score: 0.896
+Done in 2 minutes, 33 seconds
+
+PARAMS:
+1-Stage Vec: diffposneg, 2-Stage Vec: tfidf
+Subj Det: filter, Dim Red: False
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:05<00:00, 390.42it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 11:16:29,300 - DiffPosNeg - INFO - Number of positive documents: 1887 (utils.py:289)
+2022-08-10 11:16:29,300 - DiffPosNeg - INFO - Fitted Model and transformed 2000 documents in 27 seconds (utils.py:303)
+2022-08-10 11:16:36,555 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:16:36,556 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:16:38,626 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:20:31,659 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 59 seconds (utils.py:453)
+2022-08-10 11:20:34,282 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:21:39,628 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:21:44,414 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:21:44,415 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:21:46,572 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:24:58,691 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 18 seconds (utils.py:453)
+2022-08-10 11:25:01,301 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:26:03,427 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:26:07,664 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:26:07,665 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:26:09,703 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:29:26,065 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 22 seconds (utils.py:453)
+2022-08-10 11:29:28,763 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:30:29,497 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:30:33,696 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:30:33,697 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:30:35,725 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:33:50,626 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 21 seconds (utils.py:453)
+2022-08-10 11:33:53,275 - DiffPosNeg - INFO - Transformed 400 documents in 2 seconds (utils.py:270)
+2022-08-10 11:34:53,756 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+2022-08-10 11:34:58,013 - DiffPosNeg - INFO - Transformed 1600 documents in 4 seconds (utils.py:270)
+2022-08-10 11:34:58,014 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:35:00,069 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:40:40,365 - Two Stage Classifier - INFO - Done fitting in 5 minutes, 46 seconds (utils.py:453)
+2022-08-10 11:40:43,571 - DiffPosNeg - INFO - Transformed 400 documents in 3 seconds (utils.py:270)
+2022-08-10 11:41:32,644 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.866
+2022-08-10 11:41:37,321 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+2022-08-10 11:47:04,992 - Two Stage Classifier - INFO - SVC was called 100.0% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.540
+2022-08-10 11:47:10,175 - DiffPosNeg - INFO - Transformed 2000 documents in 4 seconds (utils.py:270)
+SVC F1 Score: 0.866
+Done in 37 minutes, 28 seconds
+
+PARAMS:
+1-Stage Vec: count, 2-Stage Vec: tfidf
+Subj Det: aggregate, Dim Red: True
+2022-08-10 11:53:37,346 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:53:40,853 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:54:02,001 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:54:02,002 - Two Stage Classifier - INFO - Done fitting in 28 seconds (utils.py:453)
+2022-08-10 11:54:02,855 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+2022-08-10 11:54:06,576 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:54:10,101 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:54:30,839 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:54:30,863 - Two Stage Classifier - INFO - Done fitting in 27 seconds (utils.py:453)
+2022-08-10 11:54:31,720 - Two Stage Classifier - INFO - SVC was called 0.5% of the time (utils.py:505)
+2022-08-10 11:54:35,413 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:54:38,887 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:54:59,498 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:54:59,502 - Two Stage Classifier - INFO - Done fitting in 27 seconds (utils.py:453)
+2022-08-10 11:55:00,414 - Two Stage Classifier - INFO - SVC was called 0.5% of the time (utils.py:505)
+2022-08-10 11:55:04,066 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:55:07,516 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:55:30,922 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:55:30,923 - Two Stage Classifier - INFO - Done fitting in 30 seconds (utils.py:453)
+2022-08-10 11:55:31,858 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+2022-08-10 11:55:35,563 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:55:39,065 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 11:56:00,364 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 11:56:00,365 - Two Stage Classifier - INFO - Done fitting in 28 seconds (utils.py:453)
+2022-08-10 11:56:01,248 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.814
+2022-08-10 11:56:05,658 - Two Stage Classifier - INFO - SVC was called 0.1% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.814
+SVC F1 Score: 0.898
+Done in 3 minutes, 4 seconds
+
+PARAMS:
+1-Stage Vec: count, 2-Stage Vec: tfidf
+Subj Det: aggregate, Dim Red: False
+2022-08-10 11:56:42,240 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 11:56:49,901 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:00:42,082 - Two Stage Classifier - INFO - Done fitting in 4 minutes, 3 seconds (utils.py:453)
+2022-08-10 12:00:43,477 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+2022-08-10 12:00:47,188 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:00:54,723 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:04:10,706 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 27 seconds (utils.py:453)
+2022-08-10 12:04:11,987 - Two Stage Classifier - INFO - SVC was called 0.5% of the time (utils.py:505)
+2022-08-10 12:04:15,700 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:04:23,419 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:07:00,784 - Two Stage Classifier - INFO - Done fitting in 2 minutes, 48 seconds (utils.py:453)
+2022-08-10 12:07:01,902 - Two Stage Classifier - INFO - SVC was called 0.5% of the time (utils.py:505)
+2022-08-10 12:07:05,545 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:07:13,125 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:11:04,367 - Two Stage Classifier - INFO - Done fitting in 4 minutes, 2 seconds (utils.py:453)
+2022-08-10 12:11:05,868 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+2022-08-10 12:11:09,617 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:11:17,272 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:14:52,159 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 46 seconds (utils.py:453)
+2022-08-10 12:14:53,526 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.812
+2022-08-10 12:14:58,367 - Two Stage Classifier - INFO - SVC was called 0.1% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.814
+SVC F1 Score: 0.829
+Done in 26 minutes, 10 seconds
+
+PARAMS:
+1-Stage Vec: count, 2-Stage Vec: tfidf
+Subj Det: filter, Dim Red: True
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:04<00:00, 401.55it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 12:22:52,315 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:22:54,310 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 12:23:07,820 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:23:07,821 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 12:23:08,315 - Two Stage Classifier - INFO - SVC was called 2.0% of the time (utils.py:505)
+2022-08-10 12:23:10,423 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:23:12,432 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 12:23:26,497 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:23:26,499 - Two Stage Classifier - INFO - Done fitting in 18 seconds (utils.py:453)
+2022-08-10 12:23:26,994 - Two Stage Classifier - INFO - SVC was called 2.5% of the time (utils.py:505)
+2022-08-10 12:23:29,077 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:23:31,077 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 12:23:44,351 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:23:44,353 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 12:23:44,886 - Two Stage Classifier - INFO - SVC was called 2.2% of the time (utils.py:505)
+2022-08-10 12:23:46,967 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:23:48,955 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 12:24:01,949 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:24:01,950 - Two Stage Classifier - INFO - Done fitting in 16 seconds (utils.py:453)
+2022-08-10 12:24:02,488 - Two Stage Classifier - INFO - SVC was called 1.5% of the time (utils.py:505)
+2022-08-10 12:24:04,578 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:24:06,586 - Two Stage Classifier - INFO - Fitting dimensionality reduction module (utils.py:433)
+2022-08-10 12:24:19,768 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:24:19,770 - Two Stage Classifier - INFO - Done fitting in 17 seconds (utils.py:453)
+2022-08-10 12:24:20,282 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.845
+2022-08-10 12:24:22,815 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.845
+SVC F1 Score: 0.896
+Done in 1 minute, 51 seconds
+
+PARAMS:
+1-Stage Vec: count, 2-Stage Vec: tfidf
+Subj Det: filter, Dim Red: False
+100%|███████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:05<00:00, 393.77it/s]
+Removed 25978/65258 using subjectivity detection filtering.
+2022-08-10 12:24:44,233 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:24:46,256 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:28:20,519 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 38 seconds (utils.py:453)
+2022-08-10 12:28:22,260 - Two Stage Classifier - INFO - SVC was called 2.0% of the time (utils.py:505)
+2022-08-10 12:28:24,344 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:28:26,338 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:31:47,108 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 24 seconds (utils.py:453)
+2022-08-10 12:31:49,159 - Two Stage Classifier - INFO - SVC was called 2.5% of the time (utils.py:505)
+2022-08-10 12:31:51,215 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:31:53,188 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:35:23,691 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 34 seconds (utils.py:453)
+2022-08-10 12:35:25,756 - Two Stage Classifier - INFO - SVC was called 2.2% of the time (utils.py:505)
+2022-08-10 12:35:27,820 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:35:29,794 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:39:06,502 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 40 seconds (utils.py:453)
+2022-08-10 12:39:07,950 - Two Stage Classifier - INFO - SVC was called 1.5% of the time (utils.py:505)
+2022-08-10 12:39:10,042 - Two Stage Classifier - INFO - Fitting First Stage Classifier (utils.py:423)
+2022-08-10 12:39:12,012 - Two Stage Classifier - INFO - Fitting Second Stage Classifier (utils.py:440)
+2022-08-10 12:42:54,347 - Two Stage Classifier - INFO - Done fitting in 3 minutes, 46 seconds (utils.py:453)
+2022-08-10 12:42:55,256 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Two Stage Classifier F1 Score: 0.850
+2022-08-10 12:43:00,766 - Two Stage Classifier - INFO - SVC was called 0.8% of the time (utils.py:505)
+Multinomial Naive Bayes F1 Score: 0.845
+SVC F1 Score: 0.866
+
+Done in 24 minutes, 56 seconds
+[['diffposneg', 'count', 'aggregate', True, 0.52, 0.52, 0.906, '0m:16s', '0m:6s', '0m:9s'], ['diffposneg', 'count', 'aggregate', False, 0.731, 0.539, 0.731, '5m:1s', '0m:6s', '5m:16s'], ['diffposneg', 'count', 'filter', True, 0.519, 0.531, 0.887, '0m:7s', '0m:9s', '0m:2s'], ['diffposneg', 'count', 'filter', False, 0.75, 0.535, 0.75, '5m:3s', '0m:9s', '8m:34s'], ['diffposneg', 'tfidf', 'aggregate', True, 0.49, 0.519, 0.9, '0m:16s', '0m:6s', '0m:9s'], ['diffposneg', 'tfidf', 'aggregate', False, 0.829, 0.487, 0.829, '5m:50s', '0m:6s', '6m:24s'], ['diffposneg', 'tfidf', 'filter', True, 0.5, 0.532, 0.896, '0m:7s', '0m:9s', '0m:2s'], ['diffposneg', 'tfidf', 'filter', False, 0.866, 0.54, 0.866, '5m:32s', '0m:9s', '5m:25s'], ['count', 'tfidf', 'aggregate', True, 0.814, 0.814, 0.898, '0m:4s', '0m:4s', '0m:9s'], ['count', 'tfidf', 'aggregate', False, 0.812, 0.814, 0.829, '0m:4s', '0m:4s', '5m:58s'], ['count', 'tfidf', 'filter', True, 0.845, 0.845, 0.896, '0m:2s', '0m:7s', '0m:2s'], ['count', 'tfidf', 'filter', False, 0.85, 0.845, 0.866, '0m:5s', '0m:7s', '5m:31s']]
+Saving summary at: tmp/summary/summary.csv
+python 02-main.py  31291.75s user 13861.84s system 345% cpu 3:37:57.45 total
